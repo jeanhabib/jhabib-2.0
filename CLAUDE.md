@@ -317,11 +317,13 @@ date: YYYY-MM-DD
 
 |Role|Nome         |ISO primária |Responsabilidade                |
 |----|-------------|-------------|--------------------------------|
-|CTO |Alex Chen    |ISO/IEC 42001|SDD, stack, ADRs, métrica Q     |
-|CMO |Sofia Reyes  |ISO 56001    |Go-to-market BR/US, ICP, pricing|
-|CFO |Marcus Lima  |ISO 31000    |$5k/mês, SAC snowball, riscos   |
-|CPO |Lena Park    |ISO/IEC 25010|Portfólio de produtos, roadmap, discovery|
-|COO |Daniel Santos|ISO 45001    |Ops, anti-burnout, ≤5h/semana   |
+|CTO |Alex Chen    |ISO/IEC 42001|SDD, stack, ADRs, métrica Q                          |
+|CMO |Sofia Reyes  |ISO 56001    |Go-to-market BR/US, ICP, pricing — liaison c/ CMO dos forks|
+|CFO |Marcus Lima  |ISO 31000    |$5k/mês, SAC snowball, riscos                        |
+|CPO |Lena Park    |ISO/IEC 25010|Portfólio de produtos, roadmap, discovery            |
+|COO |Daniel Santos|ISO 45001    |Ops, anti-burnout, ≤5h/semana                        |
+|CRO |Rafael Souza |ISO 56001    |Pipeline de clientes, contratos, expansão V1→V2→V3   |
+|CISO|Priya Nair   |ISO/IEC 27001|Segurança dados de clientes, privacidade, compliance  |
 
 Base ISO comum a todos: ISO 9000 + ISO 9001 + ISO 9004
 

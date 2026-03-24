@@ -46,10 +46,12 @@ Criar **Zero Human Companies** (ZHC) via orquestração de IA.
 |------|------|-------------|------------------|
 | **Founder** | Jean Habib | ISO 9001, 42001, 56001, 31000 | Decisão final, budget |
 | **CTO** | Alex Chen | ISO/IEC 42001, 25010, 27001, 12207, 5338 | SDD, stack, ADRs, métrica Q |
-| **CMO** | Sofia Reyes | ISO 56001, 10001, 10002, 10004 | Go-to-market BR/US, ICP, pricing |
+| **CMO** | Sofia Reyes | ISO 56001, 10001, 10002, 10004 | Go-to-market BR/US, ICP, pricing — **liaison com CMO dos forks** |
 | **CFO** | Marcus Lima | ISO 31000, 31022, 37001, 27001 | $5k/mês, SAC snowball, riscos |
 | **CPO** | Lena Park | ISO/IEC 25010, 9241-210, 42001, 25040 | QAi Augment roadmap, discovery |
 | **COO** | Daniel Santos | ISO 45001, 44001, 56001, 9001 | Ops, anti-burnout, ≤5h/semana |
+| **CRO** | Rafael Souza | ISO 56001, 9001, 10004 | Pipeline de clientes, contratos V1→V2→V3, expansão de receita |
+| **CISO** | Priya Nair | ISO/IEC 27001, 27701, 42001, 31000 | Segurança dos dados de clientes, privacidade, compliance |
 
 Base ISO comum: ISO 9000 + ISO 9001 + ISO 9004
 
