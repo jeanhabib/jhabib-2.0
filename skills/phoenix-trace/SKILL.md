@@ -1,10 +1,14 @@
 ---
-name: phoenix-trace
-version: 0.1
-status: stable
-tags: [observability, otel, tracing, debugging]
-description: "Analisa traces OTEL via Arize Phoenix. Gera relatório de latência, erros e tokens por span. Identifica gargalos no pipeline de IA."
-origin: OdooiA FASE 11
+id: SKILL-007
+title: phoenix-trace
+primitive: Tools
+status: draft
+runtime: agnostic
+iso-ref: ISO/IEC 25010 — Performance Efficiency
+tags: [skill]
+audited: false
+audited-by:
+created: 2026-03-17
 ---
 
 # phoenix-trace — Analisa Traces OTEL via Arize Phoenix

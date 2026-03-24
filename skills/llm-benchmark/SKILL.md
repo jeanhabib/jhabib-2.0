@@ -1,10 +1,14 @@
 ---
-name: llm-benchmark
-version: 0.1
-status: stable
-tags: [llm, benchmark, ollama, model-selection]
-description: "Benchmarks a local LLM model against representative task examples before committing it to a component — prevents AP-003 (wrong model chosen by availability not fitness)."
-origin: OdooiA retrospectiva FASE 11
+id: SKILL-004
+title: llm-benchmark
+primitive: Intelligence
+status: draft
+runtime: agnostic
+iso-ref: ISO/IEC 25010 — Performance Efficiency
+tags: [skill]
+audited: false
+audited-by:
+created: 2026-03-17
 ---
 
 # llm-benchmark — Validar Modelo LLM Antes de Commitar

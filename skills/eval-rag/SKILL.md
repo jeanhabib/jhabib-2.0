@@ -1,10 +1,14 @@
 ---
-name: eval-rag
-version: 0.1
-status: stable
-tags: [rag, quality, deepeval]
-description: "Avalia pipeline RAG com DeepEval (faithfulness, answer relevancy, contextual precision). Identifica chunks problemáticos e recomenda ajustes."
-origin: OdooiA FASE 11
+id: SKILL-003
+title: eval-rag
+primitive: Intelligence
+status: draft
+runtime: agnostic
+iso-ref: ISO/IEC 25010 — Functional Correctness
+tags: [skill]
+audited: false
+audited-by:
+created: 2026-03-17
 ---
 
 # eval-rag — Avalia Pipeline RAG com DeepEval

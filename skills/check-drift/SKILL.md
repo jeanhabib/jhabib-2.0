@@ -1,10 +1,14 @@
 ---
-name: check-drift
-version: 0.1
-status: stable
-tags: [ml, monitoring, drift, production]
-description: "Detecta data drift em modelos ML comparando distribuição atual com baseline. Previne degradação silenciosa em produção."
-origin: OdooiA FASE 11
+id: SKILL-001
+title: check-drift
+primitive: Intelligence
+status: draft
+runtime: agnostic
+iso-ref: ISO/IEC 25010 — Reliability
+tags: [skill]
+audited: false
+audited-by:
+created: 2026-03-17
 ---
 
 # check-drift — Detecta Data Drift em Modelos ML

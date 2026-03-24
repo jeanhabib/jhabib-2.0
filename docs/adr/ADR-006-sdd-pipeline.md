@@ -1,7 +1,16 @@
+---
+id: ADR-006
+title: sdd-pipeline
+status: ACCEPTED
+superseded-by: ~
+date: 2026-03-17
+iso-ref: ~
+tags: [adr]
+audited: false
+---
+
 # ADR-006 — Pipeline de Desenvolvimento com IA (SDD)
 
-**Status:** Aceito
-**Data:** 2026-03
 **Origem:** OdooiA — generalizado para Jhabib 2.0
 
 ## Decisão

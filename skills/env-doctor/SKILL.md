@@ -1,12 +1,14 @@
 ---
-name: env-doctor
-version: 0.1
-status: stable
-tags: [infra, health-check, pre-dev]
-description: "Verifica a saúde de todos os serviços da stack antes de qualquer ciclo de desenvolvimento. Dispare antes de codar."
-disable-model-invocation: true
-user-invocable: true
-origin: OdooiA Sprint 1
+id: SKILL-002
+title: env-doctor
+primitive: Tools
+status: draft
+runtime: agnostic
+iso-ref: ISO/IEC 25010 — Operability
+tags: [skill]
+audited: false
+audited-by:
+created: 2026-03-17
 ---
 
 # env-doctor — Health Check da Stack

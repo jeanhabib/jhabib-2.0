@@ -1,12 +1,14 @@
 ---
-name: security-scan
-version: 0.1
-status: stable
-tags: [security, red-teaming, owasp, pre-merge]
-description: "Varredura de segurança no PR antes do merge: credenciais expostas, injeção de prompt, SQL injection, endpoints sem auth. Finding crítico = bloqueante."
-disable-model-invocation: true
-user-invocable: true
-origin: OdooiA Sprint 1
+id: SKILL-009
+title: security-scan
+primitive: Intelligence
+status: draft
+runtime: agnostic
+iso-ref: ISO/IEC 25010 — Security
+tags: [skill]
+audited: false
+audited-by:
+created: 2026-03-17
 ---
 
 # security-scan — Varredura de Segurança Pré-Merge

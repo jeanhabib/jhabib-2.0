@@ -1,7 +1,16 @@
+---
+id: ADR-010
+title: e2e-obrigatorio-llm
+status: ACCEPTED
+superseded-by: ~
+date: 2026-03-15
+iso-ref: ~
+tags: [adr]
+audited: false
+---
+
 # ADR-010 — Teste E2E Obrigatório em Toda Story com LLM
 
-**Status:** Aceito
-**Data:** 2026-03-15
 **Origem:** OdooiA — generalizado para Jhabib 2.0
 
 ## Decisão

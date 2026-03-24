@@ -1,10 +1,14 @@
 ---
-name: retrospective
-version: 0.1
-status: stable
-tags: [learning, meta, knowledge-capture, jhabib-2.0]
-description: "Conduz retrospectiva de projeto e captura conhecimento como SKILLs, ADRs e anti-patterns. Alimenta o Learning Loop do Jhabib 2.0."
-origin: OdooiA FASE 11 + Sprint 1
+id: SKILL-008
+title: retrospective
+primitive: Learning
+status: draft
+runtime: agnostic
+iso-ref: ISO/IEC 25010 — Maintainability
+tags: [skill]
+audited: false
+audited-by:
+created: 2026-03-17
 ---
 
 # retrospective — Conduz Retrospectiva e Captura Conhecimento

@@ -1,12 +1,14 @@
 ---
-name: smoke-test
-version: 0.2
-status: stable
-tags: [qa, smoke, playwright, ui]
-description: "Executa testes rápidos de validação do sistema pós-deploy. Primeira barreira do QA — falha aqui volta para desenvolvimento."
-disable-model-invocation: true
-user-invocable: true
-origin: OdooiA Sprint 1 + ADR-015
+id: SKILL-010
+title: smoke-test
+primitive: Tools
+status: draft
+runtime: agnostic
+iso-ref: ISO/IEC 25010 — Functional Suitability
+tags: [skill]
+audited: false
+audited-by:
+created: 2026-03-17
 ---
 
 # smoke-test — Validação Rápida do Sistema

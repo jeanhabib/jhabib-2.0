@@ -1,13 +1,14 @@
 ---
-name: nist-audit
-version: 0.1
-status: stable
-tags: [security, governance, nist, ai-rmf, compliance]
-description: "Auditoria NIST AI RMF (Transparência, Segurança, Robustez, Governança) para sistemas de IA. Obrigatório para Edge AI e dados biométricos/sensíveis."
-disable-model-invocation: true
-user-invocable: true
-argument-hint: "nome-do-modulo | all"
-origin: OdooiA Sprint 1
+id: SKILL-005
+title: nist-audit
+primitive: Intelligence
+status: draft
+runtime: agnostic
+iso-ref: ISO/IEC 25010 — Security
+tags: [skill]
+audited: false
+audited-by:
+created: 2026-03-17
 ---
 
 # nist-audit — Auditoria NIST AI RMF

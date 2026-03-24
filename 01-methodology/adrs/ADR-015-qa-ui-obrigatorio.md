@@ -1,7 +1,16 @@
+---
+id: ADR-015
+title: qa-ui-obrigatorio
+status: ACCEPTED
+superseded-by: ~
+date: 2026-03-16
+iso-ref: ~
+tags: [adr]
+audited: false
+---
+
 # ADR-015 — QA UI Obrigatório Antes de Fechar Card de Feature
 
-**Status:** Aceito
-**Data:** 2026-03-16
 **Origem:** OdooiA — generalizado para Jhabib 2.0
 
 ## Decisão

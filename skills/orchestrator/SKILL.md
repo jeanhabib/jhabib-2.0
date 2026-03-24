@@ -1,10 +1,14 @@
 ---
-name: orchestrator
-version: 2.0
-status: stable
-tags: [meta, orchestration, sdd, cycle]
-description: "Skill mestra do ciclo SDD 2.0. Lê o Kanban, elege o próximo card, orquestra todas as skills em sequência e fecha o ciclo. Único ponto de entrada para o fluxo automático."
-origin: OdooiA Sprint 1 — versão genérica sem refs de projeto
+id: SKILL-006
+title: orchestrator
+primitive: Agents
+status: draft
+runtime: agnostic
+iso-ref: ISO/IEC 25010 — Process Quality
+tags: [skill]
+audited: false
+audited-by:
+created: 2026-03-17
 ---
 
 # Orchestrator — SDD 2.0
