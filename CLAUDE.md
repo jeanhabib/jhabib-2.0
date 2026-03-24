@@ -35,33 +35,45 @@ de ≤5h/semana. Não crie trabalho desnecessário.
 **Missão:** Zero Human Companies (ZHC) via orquestração de IA
 **Metodologia:** SDD — Spec → SKILL → Evidence → Retro
 **Posição:** “Brasil valida o método, US é o destino”
-**Produto:** QAi Augment (SaaS). **Cliente:** Felipe (restaurante)
 **Side project** paralelo a TrueLogic/SoulCycle (trabalho corporativo)
 **Meta:** $5.000 USD/mês líquido + SAC snowball ~$3k/mês no apê SP
 
-**OdooiA/food-service-ai-ops-v2** = experiência PASSADA.
-Documentada no Notion (Restaurant AI Ops). Não é foco ativo.
-Os ADRs e SKILLs que vieram de lá estão neste repo mas
-**precisam de auditoria antes de serem promovidos**.
+### Portfólio de Produtos (3 vetores)
+
+| Vetor | Produto | Horizonte | Status |
+|-------|---------|-----------|--------|
+| **V1** | OdooiA — vertical food-service | 0-3 meses | Felipe co-fundador (20-25%), FAPEMA aprovada |
+| **V2** | Réplica OdooiA — outros restaurantes | 3-6 meses | Depende do case Felipe |
+| **V3** | SDD 2.0 licenciado — metodologia | 6-18 meses | Depende de 2-3 cases |
+
+**QAi Augment** = plataforma de orquestração (dashboard + toolkit QA via IA).
+Sustenta V1+V2+V3. Não é o produto vertical.
+
+**Felipe** = co-fundador do OdooiA (não “cliente”). Equity 20-25% por R$15k aporte.
+**OdooiA** = V1 ativo (não experiência passada). Source of truth domain: Notion.
 
 -----
 
-## ESTADO ATUAL DO REPO (2026-03-23)
+## ESTADO ATUAL DO REPO (2026-03-24)
 
 ### O que existe
 
-- Arquivos `.md` de ADRs e SKILLs importados da POC OdooiA
-- Vault Obsidian ativo apontando para esta pasta
-- Plugins instalados: obsidian-git, templater, dataview, calendar
+- Vault Obsidian com estrutura organizada (`00-strategy/` a `06-us-market/`)
+- HOME.md, VAULT.md, 5 templates em `/templates/`
+- AUDIT-2026-03-23.md — auditoria completa dos arquivos POC
+- Docs estratégicos: vision.md (3 vetores), financial-goals.md, sdd-overview.md, zhc-overview.md
+- Overviews de produto: OdooiA (V1) e QAi Augment (plataforma)
+- 2 ADRs aprovados em `01-methodology/adrs/` (ADR-010, ADR-015)
+- 10 SKILLs em `skills/` (todas ⚠️ REVISÃO — gap de governança, não de utilidade)
+- 5 ADRs em `docs/adr/` (3 ⚠️ REVISÃO, 2 ✅ copiados para novo destino)
+- Plugins: obsidian-git, templater, dataview, calendar
 
 ### O que ainda não existe
 
-- Estrutura de pastas organizada (ver abaixo)
-- HOME.md e VAULT.md
-- Templates em `/templates/`
-- AUDIT-2026-03-23.md (auditoria dos arquivos existentes)
 - ADR-v2-007 (protocolo de transferência JHabib 2.0)
-- AI Policy (exigência ISO/IEC 42001)
+- AI Policy (`00-strategy/ai-policy.md`) — exigência ISO/IEC 42001
+- Frontmatter canônico nas 10 SKILLs e 3 ADRs em revisão
+- Protótipos .jsx no repo (existem apenas no browser)
 
 -----
 
@@ -88,12 +100,13 @@ jhabib-2.0/
 │   └── anti-patterns/
 │
 ├── 02-products/
+│   ├── odooia/
+│   │   └── overview.md              ← V1: vertical food-service
 │   └── qaai-augment/
-│       ├── overview.md
+│       ├── overview.md              ← plataforma de orquestração
 │       └── prototypes/              ← os 4 .jsx gerados no browser
 │
-├── 03-clients/
-│   └── felipe-restaurant.md
+├── 03-clients/                      ← (Felipe é co-fundador, não cliente)
 │
 ├── 04-learning/
 │   └── retrospectives/
@@ -232,7 +245,7 @@ date: YYYY-MM-DD
 |CTO |Alex Chen    |ISO/IEC 42001|SDD, stack, ADRs, métrica Q     |
 |CMO |Sofia Reyes  |ISO 56001    |Go-to-market BR/US, ICP, pricing|
 |CFO |Marcus Lima  |ISO 31000    |$5k/mês, SAC snowball, riscos   |
-|CPO |Lena Park    |ISO/IEC 25010|QAi Augment roadmap, discovery  |
+|CPO |Lena Park    |ISO/IEC 25010|Portfólio de produtos, roadmap, discovery|
 |COO |Daniel Santos|ISO 45001    |Ops, anti-burnout, ≤5h/semana   |
 
 Base ISO comum a todos: ISO 9000 + ISO 9001 + ISO 9004
@@ -255,12 +268,14 @@ Base ISO comum a todos: ISO 9000 + ISO 9001 + ISO 9004
 
 ## LACUNAS ABERTAS (prioridade decrescente)
 
-- **L1** — Auditoria dos ADRs e SKILLs existentes (POC → JHabib 2.0)
-- **L1b** — Criar estrutura de pastas + templates + HOME.md + VAULT.md
+- ~~**L1** — Auditoria dos ADRs e SKILLs existentes~~ ✅ RESOLVIDA (2026-03-24)
+- ~~**L1b** — Criar estrutura de pastas + templates + HOME.md + VAULT.md~~ ✅ RESOLVIDA (2026-03-24)
 - **L2** — ADR-v2-007: protocolo formal de transferência JHabib 2.0
 - **L3** — AI Policy (`00-strategy/ai-policy.md`) — ISO/IEC 42001
 - **L4** — CLAUDE.md v2: incorporar spike-first + DESCARTADO obrigatório
 - **L5** — Mover os 4 protótipos .jsx para `02-products/qaai-augment/prototypes/`
+- **L6** — Frontmatter canônico nas 10 SKILLs + 3 ADRs em revisão
+- **L7** — Limpeza Notion: arquivar páginas obsoletas, mover OdooiA-specific
 
 -----
 
