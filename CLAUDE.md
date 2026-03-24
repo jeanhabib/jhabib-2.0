@@ -4,7 +4,7 @@
 
 # Modelo alvo: claude-sonnet-4-20250514
 
-# Atualizado: 2026-03-23
+# Atualizado: 2026-03-24
 
 -----
 
@@ -21,19 +21,22 @@ de ≤5h/semana. Não crie trabalho desnecessário.
 
 ## REGRAS INVIOLÁVEIS
 
-1. **Spec antes de qualquer código** — nenhum arquivo é criado sem Spec
-1. **Evidence = done means proven** — “funciona aqui” não é evidence
+1. **Spec antes de qualquer código** — nenhum arquivo é criado sem Spec (Spec-lite conta, ver SDD Express)
+1. **Evidence = done means proven** — “funciona aqui” não é evidence (Express: “Felipe confirmou” é válido)
 1. **≤5h/semana de trabalho humano** — pergunte o saldo antes de propor tarefas
 1. **Privacy First** — prefira soluções locais; Ollama > cloud quando possível
 1. **Runtime-agnostic** — SKILLs devem funcionar em Claude Code E Continue.dev
 1. **Sem trabalho após 22h** — ISO 45001, não é sugestão
+1. **Revenue first** — prioridade: Revenue > Produto > Método > Admin (ADR-018)
 
 -----
 
 ## CONTEXTO DA EMPRESA
 
 **Missão:** Zero Human Companies (ZHC) via orquestração de IA
-**Metodologia:** SDD — Spec → SKILL → Evidence → Retro
+**Metodologia:** SDD — dois modos (ver ADR-018):
+- **SDD Full:** Spec → SKILL → Evidence → Retro (governança, plataforma)
+- **SDD Express:** Spec-lite → Execute → Ship → Retro express (V1 revenue)
 **Posição:** “Brasil valida o método, US é o destino”
 **Side project** paralelo a TrueLogic/SoulCycle (trabalho corporativo)
 **Meta:** $5.000 USD/mês líquido + SAC snowball ~$3k/mês no apê SP
@@ -126,10 +129,66 @@ jhabib-2.0/
 
 -----
 
-## TAREFA PRIORITÁRIA — AUDITORIA DOS ARQUIVOS EXISTENTES
+## SDD EXPRESS (ADR-018 — vigente até 2 meses de MRR)
 
-Os `.md` de ADRs e SKILLs vieram da POC OdooiA. Antes de qualquer
-coisa, rode a auditoria com os critérios abaixo.
+Para trabalho de V1 (OdooiA) e ativação comercial, usar SDD Express:
+
+### Ciclo Express
+
+```
+Spec-lite → Execute → Ship → Retro express
+```
+
+### Template Spec-lite
+
+```markdown
+## [Nome da entrega]
+- **O quê:** [1 frase]
+- **Pra quem:** [Felipe / usuário final / interno]
+- **Done quando:** [critério observável]
+```
+
+### Retro Express
+
+```markdown
+- **Funcionou:** [o quê]
+- **Não funcionou:** [o quê]
+- **Próximo:** [1 ação]
+```
+
+### Quando usar Full vs Express
+
+| Situação | Modo |
+|----------|------|
+| Feature do OdooiA para Felipe | Express |
+| Onboarding, demo, ativação comercial | Express |
+| Novo ADR (decisão arquitetural) | Full |
+| Nova SKILL reutilizável | Full |
+| Trabalho de plataforma (QAi Augment) | Full |
+| Governança, auditoria | Full (ou congelado) |
+
+### Hierarquia de prioridades
+
+```
+1. REVENUE   — Tudo que coloca dinheiro na conta (V1 ativo)
+2. PRODUTO   — Features que Felipe pediu ou precisa
+3. MÉTODO    — SDD/governança (só se necessário para 1 ou 2)
+4. ADMIN     — Vault, docs, organização (mínimo viável)
+```
+
+### Alocação semanal (5h)
+
+| Bloco | Horas | Atividade |
+|-------|-------|-----------|
+| Revenue | 3h | Comunicação com Felipe, deploy, fixes |
+| Método | 1h | Uma retro express, um ADR se necessário |
+| Admin | 1h | Sessão log, vault mínimo |
+
+-----
+
+## AUDITORIA (referência — concluída 2026-03-23)
+
+Resultado completo em `AUDIT-2026-03-23.md`. Resumo: 2 ADRs aprovados, 13 em revisão, 0 descartados. Gap é de governança, não de utilidade.
 
 ### Critérios de auditoria por C-Level
 
@@ -156,25 +215,6 @@ coisa, rode a auditoria com os critérios abaixo.
 
 - Cria dependência de ferramenta paga? Qual o custo?
 - Risco identificado? Plano de mitigação existe?
-
-### Decisão por arquivo
-
-|Status      |Ação                                                     |
-|------------|---------------------------------------------------------|
-|✅ APROVADO  |Mover para `01-methodology/skills/` ou `adrs/`           |
-|⚠️ REVISÃO   |Ajustar frontmatter + critérios + runtime, depois aprovar|
-|❌ DESCARTADO|Documentar motivo em `01-methodology/anti-patterns/`     |
-
-### Saída obrigatória
-
-Criar `AUDIT-2026-03-23.md` na raiz com tabela:
-
-```markdown
-| Arquivo | Tipo | Status | C-Level | Motivo | Destino |
-|---------|------|--------|---------|--------|---------|
-| ADR-001-xxx.md | ADR | ✅ APROVADO | CTO | runtime-agnostic, Evidence ok | adrs/ |
-| SKILL-xxx.md | SKILL | ⚠️ REVISÃO | CPO | sem critério ISO 25010 | revisão necessária |
-```
 
 -----
 
@@ -235,6 +275,7 @@ date: YYYY-MM-DD
 |ADR-010|E2E test obrigatório para LLM stories              |ACCEPTED|
 |ADR-011|gemma:2b INVÁLIDO para intent routing              |ACCEPTED|
 |ADR-017|Fluxo unidirecional — sem divergência de métricas  |ACCEPTED|
+|ADR-018|SDD Express para fase pré-receita (expira com 2 meses MRR)|ACCEPTED|
 
 -----
 
@@ -256,11 +297,11 @@ Base ISO comum a todos: ISO 9000 + ISO 9001 + ISO 9004
 
 ```
 1. pergunte: "Jean, quantas horas do budget semanal já foram usadas?"
-2. liste as lacunas abertas e peça prioridade
-3. para a lacuna escolhida: confirme Spec antes de criar qualquer arquivo
-4. identifique SKILL aplicável ou crie nova (com frontmatter completo)
-5. execute com Evidence planejada
-6. ao fechar: crie 05-sessions/SESSION-YYYY-MM-DD.md
+2. consulte a hierarquia: Revenue > Produto > Método > Admin
+3. identifique se o trabalho é Express (V1) ou Full (governança/plataforma)
+4. Express: Spec-lite → Execute → Ship → Retro express
+   Full: Spec completa → SKILL → Evidence → Retro
+5. ao fechar: crie 05-sessions/SESSION-YYYY-MM-DD.md
    campos obrigatórios: DESCARTADO + anti-burnout check + handoff
 ```
 
@@ -268,14 +309,23 @@ Base ISO comum a todos: ISO 9000 + ISO 9001 + ISO 9004
 
 ## LACUNAS ABERTAS (prioridade decrescente)
 
+### Revenue-critical (ativas)
+
+- **R1** — Destravar RTSP com Felipe (call + modo demo)
+- **R2** — Ativar OdooiA no Jakaru (deploy real)
+- **R3** — Primeiro invoice (Setup + SaaS R$2.200/mês)
+- **R4** — Case study 1-pager para prospecção V2
+
+### Congeladas até primeiro pagamento (ADR-018)
+
 - ~~**L1** — Auditoria dos ADRs e SKILLs existentes~~ ✅ RESOLVIDA (2026-03-24)
 - ~~**L1b** — Criar estrutura de pastas + templates + HOME.md + VAULT.md~~ ✅ RESOLVIDA (2026-03-24)
-- **L2** — ADR-v2-007: protocolo formal de transferência JHabib 2.0
-- **L3** — AI Policy (`00-strategy/ai-policy.md`) — ISO/IEC 42001
-- **L4** — CLAUDE.md v2: incorporar spike-first + DESCARTADO obrigatório
-- **L5** — Mover os 4 protótipos .jsx para `02-products/qaai-augment/prototypes/`
-- **L6** — Frontmatter canônico nas 10 SKILLs + 3 ADRs em revisão
-- **L7** — Limpeza Notion: arquivar páginas obsoletas, mover OdooiA-specific
+- ~~**L4** — CLAUDE.md v2: incorporar SDD Express~~ ✅ RESOLVIDA (2026-03-24)
+- **L2** — ADR-v2-007: protocolo formal de transferência JHabib 2.0 — CONGELADA
+- **L3** — AI Policy (`00-strategy/ai-policy.md`) — CONGELADA
+- **L5** — Mover os 4 protótipos .jsx — CONGELADA
+- **L6** — Frontmatter canônico nas 10 SKILLs + 3 ADRs — CONGELADA (just-in-time se usada)
+- **L7** — Limpeza Notion — CONGELADA
 
 -----
 
@@ -288,6 +338,17 @@ Lacunas abertas: Lx (motivo)
 DESCARTADO: [o que foi tentado e não funcionou]
 Próxima prioridade: Lx
 Horas usadas esta sessão: Xh
+```
+
+### Última sessão: 2026-03-24
+
+```
+Lacunas resolvidas: L4 (CLAUDE.md v2 com SDD Express)
+Lacunas congeladas: L2, L3, L5, L6, L7 (ADR-018)
+Revenue aberto: R1 (call Felipe + demo) → R2 → R3 → R4
+DESCARTADO: nada
+Próxima prioridade: A2 (demo mode EPI Vision) → A3 (call Felipe)
+Horas usadas: ~1.5h
 ```
 
 -----
