@@ -1,0 +1,8 @@
+# Vault Obsidian
+.obsidian/
+
+# Estado volátil real-time — não versionar
+AGORA.md
+
+# OS
+.DS_Store

@@ -28,6 +28,7 @@ de ≤5h/semana. Não crie trabalho desnecessário.
 1. **Runtime-agnostic** — SKILLs devem funcionar em Claude Code E Continue.dev
 1. **Sem trabalho após 22h** — ISO 45001, não é sugestão
 1. **Revenue first** — prioridade: Revenue > Produto > Método > Admin (ADR-018)
+1. **Boundary rule** — JHabib 2.0 nunca cria código em repos de forks/clientes. Handoffs via 05-sessions/handoffs/. (ADR-019)
 
 -----
 
@@ -37,6 +38,7 @@ de ≤5h/semana. Não crie trabalho desnecessário.
 **Metodologia:** SDD — dois modos (ver ADR-018):
 - **SDD Full:** Spec → SKILL → Evidence → Retro (governança, plataforma)
 - **SDD Express:** Spec-lite → Execute → Ship → Retro express (V1 revenue)
+**Modelo:** SDD Studio Framework — JHabib 2.0 é o framework mestre; cada cliente recebe um fork. (ADR-019)
 **Posição:** “Brasil valida o método, US é o destino”
 **Side project** paralelo a TrueLogic/SoulCycle (trabalho corporativo)
 **Meta:** $5.000 USD/mês líquido + SAC snowball ~$3k/mês no apê SP
@@ -186,6 +188,37 @@ Spec-lite → Execute → Ship → Retro express
 
 -----
 
+## MODELO STUDIO + FORKS (ADR-019)
+
+JHabib 2.0 = framework mestre forkável. Código vive nos forks, metodologia vive aqui.
+
+### Ciclo de vida de um cliente
+
+```
+prospect → fork criado → pilot → ativo → case study → learning loop
+```
+
+### Protocolo de handoff (JHabib 2.0 → fork)
+
+1. Criar `05-sessions/handoffs/HANDOFF-<fork>-<data>.md`
+2. Abrir sessão no repo destino (terminal separado)
+3. Agente do fork executa com seu SDD interno
+4. Resultado atualiza `AGORA.md` do mestre
+
+JHabib 2.0 NUNCA executa código ou edita arquivos em repos de forks.
+
+### Forks ativos
+
+Ver `AGORA.md` para estado real-time. (Gitignored — estado volátil)
+
+### Learning loop (ritual mensal)
+
+1. Revisar AGORA.md de cada fork
+2. ADRs/SKILLs universais → PR para `01-methodology/`
+3. Atualizar AGORA.md com data de sync
+
+-----
+
 ## AUDITORIA (referência — concluída 2026-03-23)
 
 Resultado completo em `AUDIT-2026-03-23.md`. Resumo: 2 ADRs aprovados, 13 em revisão, 0 descartados. Gap é de governança, não de utilidade.
@@ -276,6 +309,7 @@ date: YYYY-MM-DD
 |ADR-011|gemma:2b INVÁLIDO para intent routing              |ACCEPTED|
 |ADR-017|Fluxo unidirecional — sem divergência de métricas  |ACCEPTED|
 |ADR-018|SDD Express para fase pré-receita (expira com 2 meses MRR)|ACCEPTED|
+|ADR-019|JHabib 2.0 como SDD Studio Framework forkável          |ACCEPTED|
 
 -----
 
@@ -326,6 +360,8 @@ Base ISO comum a todos: ISO 9000 + ISO 9001 + ISO 9004
 - **L5** — Mover os 4 protótipos .jsx — CONGELADA
 - **L6** — Frontmatter canônico nas 10 SKILLs + 3 ADRs — CONGELADA (just-in-time se usada)
 - **L7** — Limpeza Notion — CONGELADA
+- **L8** — Criar `01-methodology/studio-sdd/FORK-GUIDE.md` antes do V2 — CONGELADA
+- **L9** — `00-strategy/studio-model.md` completo após M1 — CONGELADA
 
 -----
 
