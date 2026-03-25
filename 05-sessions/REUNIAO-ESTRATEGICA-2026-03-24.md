@@ -8,6 +8,8 @@ tema: Metodologia efetiva para gerar receita — parar de polir, começar a vend
 
 # Reunião Estratégica C-Level — 2026-03-24
 
+> [[HOME]] · [[SESSION-2026-03-24|Session]] · [[org-chart]] · [[ADR-018-sdd-express-pre-receita|ADR-018]]
+
 > **Tema central:** O JHabib 2.0 tem método, tem produto, tem sócio — mas receita zero. Como encurtar o caminho até o primeiro R$ entrar?
 
 ---

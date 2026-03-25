@@ -11,6 +11,9 @@ audited-by:
 created: 2026-03-17
 ---
 
+> **Pilar:** [[org-chart|QA & Testes]] · **Owner:** CTO Alex Chen · [[cto-alex-chen]]
+> **Metodologia:** [[sdd-overview]] · [[golden-rules]] · [[gate-pre-pr]]
+
 # smoke-test — Validação Rápida do Sistema
 
 Primeira barreira do QA. Valida que o sistema básico funciona antes de rodar testes mais pesados.

@@ -11,6 +11,9 @@ audited-by:
 created: 2026-03-17
 ---
 
+> **Pilar:** [[org-chart|IA & Data Science]] · **Owner:** CTO Alex Chen · [[cto-alex-chen]]
+> **Metodologia:** [[sdd-overview]] · [[golden-rules]]
+
 # llm-benchmark — Validar Modelo LLM Antes de Commitar
 
 > **Em uma frase:** Antes de usar um modelo LLM num componente crítico, executa 5 exemplos representativos da tarefa real e só avança se taxa de acerto ≥ 80%.

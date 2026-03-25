@@ -11,6 +11,9 @@ audited-by:
 created: 2026-03-17
 ---
 
+> **Pilar:** [[org-chart|Engenharia & SDD]] · **Owner:** CTO Alex Chen · [[cto-alex-chen]]
+> **Metodologia:** [[sdd-overview]] · [[golden-rules]]
+
 # check-drift — Detecta Data Drift em Modelos ML
 
 > Compara distribuição atual dos dados de entrada com baseline e alerta quando drift supera threshold. Previne degradação silenciosa de modelos em produção.

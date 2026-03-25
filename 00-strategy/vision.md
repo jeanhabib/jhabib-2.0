@@ -22,16 +22,16 @@ Criar **Zero Human Companies** (ZHC) via orquestração de IA.
 
 | Vetor | Produto | O que é | Horizonte |
 |-------|---------|---------|-----------|
-| **V1** | [[02-products/odooia/overview\|OdooiA]] | Vertical food-service — IA embarcada em restaurantes | 0-3 meses |
-| **V2** | Réplica OdooiA | Mesmo produto para outros restaurantes (Nordeste BR) | 3-6 meses |
+| **V1** | [[02-products/restaurante-ia-ops/restaurante-ia-ops\|Restaurante iA Ops]] | Vertical food-service — IA embarcada em restaurantes | 0-3 meses |
+| **V2** | Réplica Restaurante iA Ops | Mesmo produto para outros restaurantes (Nordeste BR) | 3-6 meses |
 | **V3** | SDD 2.0 licenciado | Metodologia como produto — curso, framework, consultoria | 6-18 meses |
 
-**[[02-products/qaai-augment/overview\|QAi Augment]]** é a **plataforma** de orquestração que sustenta V1+V2+V3 — dashboard + toolkit de qualidade via IA. Não é o produto vertical.
+**[[02-products/qaai-augment/qaai-augment\|QAi Augment]]** é a **plataforma** de orquestração que sustenta V1+V2+V3 — dashboard + toolkit de qualidade via IA. Não é o produto vertical.
 
 ### Stakeholders-chave
 
-- **Felipe** — co-fundador do OdooiA (20-25% equity por R$15k de aporte). Dono do Jakaru Food Park (MA). Não é "cliente" — é sócio.
-- **Fernando** — dev sênior, consultor por PR mergeado (R$300-1.500/PR). Equity condicional 5-10% do OdooiA.
+- **Felipe** — co-fundador do Restaurante iA Ops (20-25% equity por R$15k de aporte). Dono do Jakaru Food Park (MA). Não é "cliente" — é sócio.
+- **Fernando** — dev sênior, consultor por PR mergeado (R$300-1.500/PR). Equity condicional 5-10% do Restaurante iA Ops.
 - **FAPEMA** — projeto aprovado (SECTI Nº 06/2025). Deliverable acadêmico vinculado ao V1.
 
 ## Contexto Operacional
@@ -57,6 +57,6 @@ Base ISO comum: ISO 9000 + ISO 9001 + ISO 9004
 
 ## Histórico
 
-**OdooiA** nasceu como POC (food-service-ai-ops-v2) e evoluiu para **V1 — primeiro produto vertical**.
+O projeto nasceu como POC "OdooiA" (food-service-ai-ops-v2) e evoluiu para **Restaurante iA Ops — V1, primeiro produto vertical**.
 ADRs e SKILLs genéricas foram transferidas para este repo e auditadas em [[AUDIT-2026-03-23]].
-Documentação domain-specific permanece no Notion (hub OdooiA).
+Documentação domain-specific permanece no Notion (hub Restaurante iA Ops).

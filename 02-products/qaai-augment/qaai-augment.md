@@ -10,7 +10,7 @@ created: 2026-03-24
 ## O que é
 
 Dashboard + toolkit de quality assurance via IA.
-**Não é um produto vertical** — é a plataforma que sustenta V1 (OdooiA), V2 (réplicas) e V3 (metodologia licenciada).
+**Não é um produto vertical** — é a plataforma que sustenta V1 (Restaurante iA Ops), V2 (réplicas) e V3 (metodologia licenciada).
 
 ## Papel no Ecossistema
 
@@ -36,5 +36,5 @@ Status: gerados no claude.ai, **não estão no repo ainda** (ver L6).
 ## Roadmap CPO (Lena Park)
 
 - [ ] Definir MVP mínimo da plataforma (o que precisa existir para V1 funcionar?)
-- [ ] Separar features "plataforma" de features "OdooiA-specific"
+- [ ] Separar features "plataforma" de features "Restaurante iA Ops-specific"
 - [ ] Métrica Q canônica (ISO 25010) — critério de qualidade unificado

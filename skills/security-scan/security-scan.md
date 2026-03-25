@@ -11,6 +11,9 @@ audited-by:
 created: 2026-03-17
 ---
 
+> **Pilar:** [[org-chart|QA & Testes + Security]] · **Owner:** CTO Alex Chen + CISO Priya Nair · [[cto-alex-chen]] · [[ciso-priya-nair]]
+> **Metodologia:** [[sdd-overview]] · [[golden-rules]] · [[gate-pre-pr]]
+
 # security-scan — Varredura de Segurança Pré-Merge
 
 Protege o sistema contra vulnerabilidades comuns antes do merge do PR.

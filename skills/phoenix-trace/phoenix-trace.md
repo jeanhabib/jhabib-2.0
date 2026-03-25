@@ -11,6 +11,9 @@ audited-by:
 created: 2026-03-17
 ---
 
+> **Pilar:** [[org-chart|IA & Data Science]] · **Owner:** CTO Alex Chen · [[cto-alex-chen]]
+> **Metodologia:** [[sdd-overview]] · [[golden-rules]]
+
 # phoenix-trace — Analisa Traces OTEL via Arize Phoenix
 
 > Consulta o Arize Phoenix local (:6006) e gera relatório de latência, erros e tokens por span. Identifica gargalos no pipeline de IA.

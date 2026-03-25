@@ -1,20 +1,20 @@
 ---
 id: CLIENT-001
-client-name: Jakaru Food Park — OdooiA
+client-name: Jakaru Food Park — Restaurante iA Ops
 stage: pilot  # pré-ativação
 fork-repo: food-service-ai-ops-v2
 equity: 20-25% Felipe co-fundador
 owner: Jean Habib
 review-cadence: quinzenal após ativação
 created: 2026-03-24
-updated: 2026-03-24
+updated: 2026-03-25
 ---
 
-# CLIENT-001 — Jakaru Food Park — OdooiA
+# CLIENT-001 — Jakaru Food Park — Restaurante iA Ops
 
 ## Contexto
 
-Felipe é co-fundador do OdooiA, não cliente. O fork `food-service-ai-ops-v2` é a implementação do sistema AI Ops para o Jakaru Food Park em São Luís (MA). Projeto em estágio pré-revenue: sistema ainda não ativado em produção.
+Felipe é co-fundador do Restaurante iA Ops, não cliente. O repo `food-service-ai-ops-v2` é a implementação do sistema AI Ops para o Jakaru Food Park em São Luís (MA). Projeto em estágio pré-revenue: sistema ainda não ativado em produção.
 
 Blocker atual: credenciais RTSP não fornecidas por Felipe → call A3 pendente para desbloqueio.
 
@@ -42,7 +42,7 @@ Blocker atual: credenciais RTSP não fornecidas por Felipe → call A3 pendente 
 
 | Nome | Papel | Decisor? |
 |------|-------|---------|
-| Felipe | Co-fundador OdooiA, dono Jakaru Food Park | Sim |
+| Felipe | Co-fundador Restaurante iA Ops, dono Jakaru Food Park | Sim |
 | Jean Habib | Founder JHabib 2.0, tech lead | Sim |
 
 ---
@@ -64,6 +64,13 @@ Blocker atual: credenciais RTSP não fornecidas por Felipe → call A3 pendente 
 | HANDOFF-food-service-ai-ops-v2-2026-03-24.md | A2 — Modo demo EPI Vision | 2026-03-24 | pending |
 
 ---
+
+## Referências
+
+- [[org-chart]] — Organograma JHabib 2.0
+- [[02-products/restaurante-ia-ops/restaurante-ia-ops|Restaurante iA Ops overview]]
+- [[cro-rafael-souza]] — Estado do pipeline CRO
+- [[vision]] — Portfólio de produtos
 
 ## Histórico de Pagamentos
 

@@ -11,6 +11,9 @@ audited-by:
 created: 2026-03-17
 ---
 
+> **Pilar:** [[org-chart|PMO & Delivery]] · **Owner:** COO Daniel Santos · [[coo-daniel-santos]]
+> **Metodologia:** [[sdd-overview]] · [[golden-rules]]
+
 # retrospective — Conduz Retrospectiva e Captura Conhecimento
 
 > **Em uma frase:** Ao fechar uma fase ou sprint, transforma aprendizado em SKILLs reutilizáveis, anti-patterns e ADRs — alimentando o Learning Loop do Jhabib 2.0.
@@ -42,7 +45,7 @@ created: 2026-03-17
 | `generic_skills` | string[] | SKILLs genéricas para migrar ao Jhabib 2.0 |
 | `domain_skills` | string[] | SKILLs de domínio para documentar no Notion |
 | `new_skills` | string[] | SKILLs novas a criar identificadas |
-| `anti_patterns` | string[] | AP-XXX para `skills/_anti-patterns.md` |
+| `anti_patterns` | string[] | AP-XXX para `01-methodology/anti-patterns/anti-patterns.md` |
 | `adrs` | string[] | ADRs novos propostos |
 | `retro_score` | 1-5 | 1=método ajudou muito, 5=método atrapalhou |
 
@@ -55,7 +58,7 @@ created: 2026-03-17
 ```bash
 git log --oneline -20          # commits da fase
 ls .claude/skills/             # inventário de skills do projeto
-cat skills/_anti-patterns.md   # anti-patterns já documentados
+cat 01-methodology/anti-patterns/anti-patterns.md   # anti-patterns já documentados
 ```
 
 ### Plano

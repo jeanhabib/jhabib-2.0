@@ -11,6 +11,9 @@ audited-by:
 created: 2026-03-17
 ---
 
+> **Pilar:** [[org-chart|QA & Testes + Security]] · **Owner:** CTO Alex Chen + CISO Priya Nair · [[cto-alex-chen]] · [[ciso-priya-nair]]
+> **Metodologia:** [[sdd-overview]] · [[golden-rules]]
+
 # nist-audit — Auditoria NIST AI RMF
 
 Guardião do framework de risco. Assegura que cada funcionalidade de IA nasce com os requisitos de confiança necessários.

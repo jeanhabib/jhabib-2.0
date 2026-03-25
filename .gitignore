@@ -4,5 +4,11 @@
 # Estado volátil real-time — não versionar
 AGORA.md
 
+# Visual companion (brainstorming sessions)
+.superpowers/
+
+# Arquivos arquivados (duplicatas removidas do graph)
+_archive/
+
 # OS
 .DS_Store

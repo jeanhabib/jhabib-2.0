@@ -11,6 +11,9 @@ audited-by:
 created: 2026-03-17
 ---
 
+> **Pilar:** [[org-chart|Engenharia & SDD]] · **Owner:** CTO Alex Chen · [[cto-alex-chen]]
+> **Metodologia:** [[sdd-overview]] · [[golden-rules]]
+
 # env-doctor — Health Check da Stack
 
 Verifica se todos os serviços estão online antes de qualquer ciclo de desenvolvimento.

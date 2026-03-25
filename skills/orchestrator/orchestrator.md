@@ -11,6 +11,9 @@ audited-by:
 created: 2026-03-17
 ---
 
+> **Pilar:** [[org-chart|Engenharia & SDD]] · **Owner:** CTO Alex Chen · [[cto-alex-chen]]
+> **Metodologia:** [[sdd-overview]] · [[golden-rules]] · [[gate-pre-pr]]
+
 # Orchestrator — SDD 2.0
 
 Skill mestra. Porta o Handoff Context entre todas as skills. Não executa código — delega, rastreia e decide.

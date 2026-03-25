@@ -4,7 +4,7 @@
 
 # Modelo alvo: claude-sonnet-4-20250514
 
-# Atualizado: 2026-03-24
+# Atualizado: 2026-03-25
 
 -----
 
@@ -47,15 +47,15 @@ de ≤5h/semana. Não crie trabalho desnecessário.
 
 | Vetor | Produto | Horizonte | Status |
 |-------|---------|-----------|--------|
-| **V1** | OdooiA — vertical food-service | 0-3 meses | Felipe co-fundador (20-25%), FAPEMA aprovada |
-| **V2** | Réplica OdooiA — outros restaurantes | 3-6 meses | Depende do case Felipe |
+| **V1** | Restaurante iA Ops — vertical food-service | 0-3 meses | Felipe co-fundador (20-25%), FAPEMA aprovada |
+| **V2** | Réplica Restaurante iA Ops — outros restaurantes | 3-6 meses | Depende do case Felipe |
 | **V3** | SDD 2.0 licenciado — metodologia | 6-18 meses | Depende de 2-3 cases |
 
 **QAi Augment** = plataforma de orquestração (dashboard + toolkit QA via IA).
 Sustenta V1+V2+V3. Não é o produto vertical.
 
-**Felipe** = co-fundador do OdooiA (não “cliente”). Equity 20-25% por R$15k aporte.
-**OdooiA** = V1 ativo (não experiência passada). Source of truth domain: Notion.
+**Felipe** = co-fundador do Restaurante iA Ops (não “cliente”). Equity 20-25% por R$15k aporte.
+**Restaurante iA Ops** = V1 ativo (repo: `food-service-ai-ops-v2`). Source of truth domain: Notion.
 
 -----
 
@@ -67,7 +67,8 @@ Sustenta V1+V2+V3. Não é o produto vertical.
 - HOME.md, VAULT.md, 5 templates em `/templates/`
 - AUDIT-2026-03-23.md — auditoria completa dos arquivos POC
 - Docs estratégicos: vision.md (3 vetores), financial-goals.md, sdd-overview.md, zhc-overview.md
-- Overviews de produto: OdooiA (V1) e QAi Augment (plataforma)
+- Overviews de produto: Restaurante iA Ops (V1) e QAi Augment (plataforma)
+- Metodologia universal: golden-rules.md + gate-pre-pr.md em `01-methodology/`
 - 2 ADRs aprovados em `01-methodology/adrs/` (ADR-010, ADR-015)
 - 10 SKILLs em `skills/` (todas ⚠️ REVISÃO — gap de governança, não de utilidade)
 - 5 ADRs em `docs/adr/` (3 ⚠️ REVISÃO, 2 ✅ copiados para novo destino)
@@ -100,12 +101,14 @@ jhabib-2.0/
 ├── 01-methodology/
 │   ├── sdd-overview.md
 │   ├── zhc-overview.md
+│   ├── golden-rules.md              ← 10 Regras de Ouro SDD
+│   ├── gate-pre-pr.md               ← Gate Pre-PR inviolável
 │   ├── skills/                      ← SKILLs AUDITADAS aqui
 │   ├── adrs/                        ← ADRs AUDITADOS aqui
 │   └── anti-patterns/
 │
 ├── 02-products/
-│   ├── odooia/
+│   ├── restaurante-ia-ops/
 │   │   └── overview.md              ← V1: vertical food-service
 │   └── qaai-augment/
 │       ├── overview.md              ← plataforma de orquestração
@@ -133,7 +136,7 @@ jhabib-2.0/
 
 ## SDD EXPRESS (ADR-018 — vigente até 2 meses de MRR)
 
-Para trabalho de V1 (OdooiA) e ativação comercial, usar SDD Express:
+Para trabalho de V1 (Restaurante iA Ops) e ativação comercial, usar SDD Express:
 
 ### Ciclo Express
 
@@ -162,7 +165,7 @@ Spec-lite → Execute → Ship → Retro express
 
 | Situação | Modo |
 |----------|------|
-| Feature do OdooiA para Felipe | Express |
+| Feature do Restaurante iA Ops para Felipe | Express |
 | Onboarding, demo, ativação comercial | Express |
 | Novo ADR (decisão arquitetural) | Full |
 | Nova SKILL reutilizável | Full |
@@ -292,7 +295,7 @@ audited: false | YYYY-MM-DD
 id: AP-NNN
 title: nome-do-problema
 severity: low | medium | high | critical
-detected-in: oodooia | jhab20 | food-service-ai-ops-v2
+detected-in: restaurante-ia-ops | jhab20 | food-service-ai-ops-v2
 tags: [anti-pattern]
 date: YYYY-MM-DD
 ---
@@ -304,7 +307,7 @@ date: YYYY-MM-DD
 
 |ID     |Decisão                                            |Status  |
 |-------|---------------------------------------------------|--------|
-|ADR-001|Autoresearch FROZEN até métrica Q (Sprint 4 OdooiA)|ACCEPTED|
+|ADR-001|Autoresearch FROZEN até métrica Q (Sprint 4 Restaurante iA Ops)|ACCEPTED|
 |ADR-010|E2E test obrigatório para LLM stories              |ACCEPTED|
 |ADR-011|gemma:2b INVÁLIDO para intent routing              |ACCEPTED|
 |ADR-017|Fluxo unidirecional — sem divergência de métricas  |ACCEPTED|
@@ -318,6 +321,8 @@ date: YYYY-MM-DD
 |Role|Nome         |ISO primária |Responsabilidade                |
 |----|-------------|-------------|--------------------------------|
 |CTO |Alex Chen    |ISO/IEC 42001|SDD, stack, ADRs, métrica Q                          |
+
+> Detalhes completos: `00-strategy/org-chart.md` (Matriz GRACI + canais + escalação)
 |CMO |Sofia Reyes  |ISO 56001    |Go-to-market BR/US, ICP, pricing — liaison c/ CMO dos forks|
 |CFO |Marcus Lima  |ISO 31000    |$5k/mês, SAC snowball, riscos                        |
 |CPO |Lena Park    |ISO/IEC 25010|Portfólio de produtos, roadmap, discovery            |
@@ -348,7 +353,7 @@ Base ISO comum a todos: ISO 9000 + ISO 9001 + ISO 9004
 ### Revenue-critical (ativas)
 
 - **R1** — Destravar RTSP com Felipe (call + modo demo)
-- **R2** — Ativar OdooiA no Jakaru (deploy real)
+- **R2** — Ativar Restaurante iA Ops no Jakaru (deploy real)
 - **R3** — Primeiro invoice (Setup + SaaS R$2.200/mês)
 - **R4** — Case study 1-pager para prospecção V2
 
@@ -378,15 +383,16 @@ Próxima prioridade: Lx
 Horas usadas esta sessão: Xh
 ```
 
-### Última sessão: 2026-03-24
+### Última sessão: 2026-03-25
 
 ```
-Lacunas resolvidas: L4 (CLAUDE.md v2 com SDD Express)
-Lacunas congeladas: L2, L3, L5, L6, L7 (ADR-018)
+Lacunas resolvidas: Graph View (15 renomes + 18 enrichments + org-chart.md + Notion page)
+Lacunas congeladas: L2, L3, L5, L6, L7, L8, L9 (ADR-018)
 Revenue aberto: R1 (call Felipe + demo) → R2 → R3 → R4
 DESCARTADO: nada
-Próxima prioridade: A2 (demo mode EPI Vision) → A3 (call Felipe)
-Horas usadas: ~1.5h
+Próxima prioridade: A3 (Jean liga Felipe) → A2 (demo mode no fork)
+Gap metodológico: Métrica Q indefinida (descongelar quando M1 próximo)
+Horas usadas: ~3h
 ```
 
 -----

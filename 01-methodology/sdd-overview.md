@@ -60,3 +60,12 @@ Cada SKILL pertence a uma primitiva:
 | **Tools** | Ferramentas auxiliares |
 | **Memory** | Persistência, contexto |
 | **Learning** | Retro, métricas, melhoria |
+
+## Referências
+
+- [[golden-rules]] — 10 Regras de Ouro do SDD
+- [[gate-pre-pr]] — Gate Pre-PR inviolável
+- [[org-chart]] — Organograma e GRACI
+- [[zhc-overview]] — Zero Human Companies
+- [[ADR-018-sdd-express-pre-receita|ADR-018]] — SDD Express
+- [[01-methodology/anti-patterns/anti-patterns|Anti-Patterns]]

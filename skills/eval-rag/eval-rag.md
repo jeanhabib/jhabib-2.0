@@ -11,6 +11,9 @@ audited-by:
 created: 2026-03-17
 ---
 
+> **Pilar:** [[org-chart|IA & Data Science]] · **Owner:** CTO Alex Chen · [[cto-alex-chen]]
+> **Metodologia:** [[sdd-overview]] · [[golden-rules]]
+
 # eval-rag — Avalia Pipeline RAG com DeepEval
 
 > Roda métricas DeepEval sobre um pipeline RAG local. Gera score e identifica chunks problemáticos.
