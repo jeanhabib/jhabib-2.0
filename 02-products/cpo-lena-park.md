@@ -1,7 +1,7 @@
 ---
 owner: Lena Park
 iso-ref: ISO/IEC 25010
-updated: 2026-03-24
+updated: 2026-03-26
 tags: [state, cpo]
 ---
 
@@ -19,13 +19,13 @@ tags: [state, cpo]
 
 ## Top Blockers
 
-- Demo mode A2 não implementado — bloqueia validação com Felipe
+- EPI Vision em desenvolvimento ativo no fork — A2 em progresso
 - RTSP não resolvido — bloqueia deploy real no Jakaru
 - Sem feedback real de usuário — sem dados para iterar produto
 
 ## Ações desta semana
 
-- [ ] A2 — Agente implementa demo mode no fork food-service-ai-ops-v2 — Owner: Agente
+- [ ] A2 — EPI Vision em dev ativo na IDE do fork — Owner: Agente — EM PROGRESSO
 - [ ] Planejar critérios de M1 (primeiro mês de revenue) — Owner: Jean
 - [ ] Coletar feedback de Felipe pós-demo A2 — Owner: Jean
 

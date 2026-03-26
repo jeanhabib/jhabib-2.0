@@ -1,7 +1,7 @@
 ---
 owner: Daniel Santos
 iso-ref: ISO 45001
-updated: 2026-03-24
+updated: 2026-03-26
 tags: [state, coo]
 ---
 
@@ -12,7 +12,7 @@ tags: [state, coo]
 
 ## Estado Atual
 
-- Budget semanal: 5h — sessão atual ~1.5h usadas
+- Budget semanal: 5h — 2.8h usadas (2.2h restantes)
 - Regra ISO 45001: sem trabalho após 22h — ativa
 - 2 contextos ativos: JHabib 2.0 (framework) + fork food-service-ai-ops-v2
 - ADR-018 ativo: SDD Express até 2 meses de MRR estabelecido
@@ -27,7 +27,9 @@ tags: [state, coo]
 
 - [ ] A3 — Jean liga para Felipe (antes de quinta) — Owner: Jean
 - [ ] A2 — Agente executa demo mode no fork — Owner: Agente
-- [ ] Fechar sessão com SESSION-2026-03-24.md — Owner: Agente
+- [x] Rebuild seletivo concluído ([[SESSION-2026-03-26]]) ✅
+- [x] Relatório FAPEMA enviado ✅
+- [ ] EPI Vision em dev ativo no fork — A2 em progresso
 
 ## SKILLs sob meu Pilar
 

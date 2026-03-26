@@ -1,7 +1,7 @@
 ---
 owner: Rafael Souza
 iso-ref: ISO 56001
-updated: 2026-03-25
+updated: 2026-03-26
 tags: [state, cro]
 ---
 
@@ -19,14 +19,14 @@ tags: [state, cro]
 ## Estado Financeiro
 
 - Pré-revenue: MRR R$0, primeiro invoice não emitido
-- FAPEMA aprovada (funding disponível) — **deadline 30/03** (vídeo + relatório + demo)
+- FAPEMA: relatório enviado em 2026-03-26 ✅ — vídeo e demo ainda pendentes
 - Felipe: co-fundador com equity 20-25% pendente formalização, aporte R$15k
 - Target: Setup R$15-25k + SaaS R$2.200/mês
 
 ## Top Blockers
 
 - RTSP não resolvido — bloqueia deploy real no Jakaru (R2)
-- Demo mode A2 pendente — bloqueia validação e fechamento (A2)
+- EPI Vision em desenvolvimento ativo na IDE do fork — A2 em progresso
 - Primeiro invoice não emitido — R$2.200/mth SaaS + Setup (R3)
 
 ## Ações desta semana

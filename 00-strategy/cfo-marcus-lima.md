@@ -1,7 +1,7 @@
 ---
 owner: Marcus Lima
 iso-ref: ISO 31000
-updated: 2026-03-24
+updated: 2026-03-26
 tags: [state, cfo]
 ---
 
@@ -13,7 +13,7 @@ tags: [state, cfo]
 ## Estado Atual
 
 - MRR atual: R$0 (pré-revenue)
-- FAPEMA aprovada — funding disponível, sem desembolso ainda
+- FAPEMA: relatório enviado 2026-03-26 ✅ — funding disponível
 - Equity Felipe (20-25%) pendente formalização contratual
 - Meta: $5.000 USD/mês líquido + SAC snowball ~R$3k/mês
 
@@ -27,7 +27,7 @@ tags: [state, cfo]
 
 - [ ] Emitir invoice R$2.200/mth após call A3 ser concluída — Owner: Jean
 - [ ] Formalizar equity Felipe (20-25%) com contrato — Owner: Jean
-- [ ] Acompanhar status FAPEMA — Owner: Jean
+- [x] Relatório FAPEMA enviado (2026-03-26) ✅
 
 ## Referências
 
