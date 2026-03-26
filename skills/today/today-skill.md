@@ -33,13 +33,13 @@ Jean digita `/today` no Claude Code.
 
 | Arquivo | Owner |
 |---------|-------|
-| `00-strategy/ops-state.md` | COO Daniel Santos |
-| `00-strategy/financial-state.md` | CFO Marcus Lima |
-| `00-strategy/compliance-state.md` | CISO Priya Nair |
-| `01-methodology/tech-state.md` | CTO Alex Chen |
-| `02-products/product-state.md` | CPO Lena Park |
-| `03-clients/pipeline.md` | CRO Rafael Souza |
-| `06-us-market/gtm-state.md` | CMO Sofia Reyes |
+| `00-strategy/coo-daniel-santos.md` | COO Daniel Santos |
+| `00-strategy/cfo-marcus-lima.md` | CFO Marcus Lima |
+| `00-strategy/ciso-priya-nair.md` | CISO Priya Nair |
+| `01-methodology/cto-alex-chen.md` | CTO Alex Chen |
+| `02-products/cpo-lena-park.md` | CPO Lena Park |
+| `03-clients/cro-rafael-souza.md` | CRO Rafael Souza |
+| `06-us-market/cmo-sofia-reyes.md` | CMO Sofia Reyes |
 | `AGORA.md` | Forks ativos |
 | `05-sessions/SESSION-*.md` (mais recente) | Última sessão |
 

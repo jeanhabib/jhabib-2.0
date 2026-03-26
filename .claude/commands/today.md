@@ -4,13 +4,13 @@ Você é o agente do JHabib 2.0 executando o SKILL-011 (/today).
 
 Leia estes 9 arquivos em paralelo (vault base: `/Users/jeanhabib/Library/Mobile Documents/iCloud~md~obsidian/Documents/jhabib-2.0`):
 
-1. `00-strategy/ops-state.md`
-2. `00-strategy/financial-state.md`
-3. `00-strategy/compliance-state.md`
-4. `01-methodology/tech-state.md`
-5. `02-products/product-state.md`
-6. `03-clients/pipeline.md`
-7. `06-us-market/gtm-state.md`
+1. `00-strategy/coo-daniel-santos.md`
+2. `00-strategy/cfo-marcus-lima.md`
+3. `00-strategy/ciso-priya-nair.md`
+4. `01-methodology/cto-alex-chen.md`
+5. `02-products/cpo-lena-park.md`
+6. `03-clients/cro-rafael-souza.md`
+7. `06-us-market/cmo-sofia-reyes.md`
 8. `AGORA.md`
 9. O arquivo mais recente em `05-sessions/SESSION-*.md` (use Glob para encontrar)
 
