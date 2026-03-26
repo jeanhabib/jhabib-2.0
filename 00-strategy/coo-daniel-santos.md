@@ -35,7 +35,7 @@ tags: [state, coo]
 
 ## Metodologias
 
-- [[sdd-overview]] · [[golden-rules]] · [[org-chart]]
+- [[SDD]] · [[org-chart]]
 
 ## Estrutura Organizacional
 

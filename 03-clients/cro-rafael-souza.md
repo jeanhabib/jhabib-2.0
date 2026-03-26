@@ -43,7 +43,7 @@ tags: [state, cro]
 
 ## Metodologias
 
-- [[sdd-overview]] · [[golden-rules]]
+- [[SDD]]
 
 ## Expansão (futuro)
 

@@ -40,4 +40,4 @@ tags: [state, cmo]
 
 ## Metodologias
 
-- [[sdd-overview]] · [[golden-rules]]
+- [[SDD]]

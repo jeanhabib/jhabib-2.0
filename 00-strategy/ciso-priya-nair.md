@@ -40,4 +40,4 @@ tags: [state, ciso]
 
 ## Metodologias
 
-- [[sdd-overview]] · [[golden-rules]] · [[gate-pre-pr]]
+- [[SDD]]

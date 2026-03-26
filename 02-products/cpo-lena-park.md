@@ -36,4 +36,4 @@ tags: [state, cpo]
 
 ## Metodologias
 
-- [[sdd-overview]] · [[golden-rules]]
+- [[SDD]]

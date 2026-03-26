@@ -37,4 +37,4 @@ tags: [state, cfo]
 
 ## Metodologias
 
-- [[sdd-overview]] · [[golden-rules]]
+- [[SDD]]

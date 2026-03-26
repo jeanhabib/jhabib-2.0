@@ -37,5 +37,4 @@ tags: [state, cto]
 
 ## Metodologias
 
-- [[sdd-overview]] · [[golden-rules]] · [[gate-pre-pr]]
-- [[ADR-010-e2e-obrigatorio-llm|ADR-010]] · [[ADR-015-qa-ui-obrigatorio|ADR-015]]
+- [[SDD]] · [[ADR-010-e2e-obrigatorio-llm|ADR-010]] · [[ADR-015-qa-ui-obrigatorio|ADR-015]]
