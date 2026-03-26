@@ -1,7 +1,7 @@
 # JHabib 2.0 — CLAUDE.md
 # Repo: https://github.com/jeanhabib/jhabib-2.0
 # Modelo: claude-sonnet-4-6
-# Atualizado: 2026-03-25
+# Atualizado: 2026-03-26
 
 ---
 
@@ -22,8 +22,10 @@ V1 ativo: Restaurante iA Ops (fork: `food-service-ai-ops-v2`, co-fundador Felipe
 ## Contexto de Sessão
 
 - Metodologia completa → [[01-methodology/SDD|SDD]]
+- Ciclo forkável (disassemble/reassemble) → [[FORK-GUIDE]]
 - Estado real-time (forks, blockers, lacunas) → [[AGORA]]
 - Organograma C-Level → [[00-strategy/org-chart|org-chart]]
+- Golden Rules → [[golden-rules]] · Gate Pre-PR → [[gate-pre-pr]]
 
 ## Iniciar Sessão
 
